@@ -1,0 +1,7 @@
+export const HOME_ROUTE = '/'
+export const SHOP_ROUTE = '/shop'
+export const ARCHIVE_ROUTE = '/archive'
+export const ABOUT_ROUTE = '/about'
+export const CONTACT_ROUTE = '/contact'
+export const CART_ROUTE = '/cart'
+export const ADMIN_ROUTE = '/admin'

@@ -1,0 +1,11 @@
+.clothingItemContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.clothingItemPrice:before {
+    content: '€';
+}
