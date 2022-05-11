@@ -2,41 +2,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 200px;
+    padding: 0 10px;
+    min-height: 380px;
     background-color: #e60505;
 }
 
 .socialContainer {
     display: flex;
     justify-content: space-between;
-    width: 100px;
+    width: 60px;
     margin-top: 50px;
 }
 
 .socialLogo {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
 }
 
 .footerFirstText {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
+    text-align: center;
 }
 
 .footerSecondText {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    text-align: center;
 }
 
 .footerThirdText {
     margin-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .input {
     width: 212px;
     height: 20px;
+    margin: 5px;
     padding: 15px;
     color: gray;
     font-size: 15px;
@@ -46,10 +57,17 @@
 .button {
     width: 150px;
     height: auto;
-    margin-left: 10px;
+    margin: 5px;
     padding: 15px;
     border: 2px solid gray;
     color: gray;
     text-transform: uppercase;
     background-color: transparent;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: gray;
+    color: white;
 }

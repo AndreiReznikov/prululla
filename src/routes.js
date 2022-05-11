@@ -5,7 +5,7 @@ import Cart from "./pages/Cart/Cart";
 import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
 import ItemPage from "./pages/ClothingItemPage/ClothingItemPage";
-import Shop from "./pages/Shop";
+import Shop from "./pages/Shop/Shop";
 import { ABOUT_ROUTE, ADMIN_ROUTE, ARCHIVE_ROUTE, CART_ROUTE, CONTACT_ROUTE, HOME_ROUTE, SHOP_ROUTE } from "./utils/consts";
 
 export const authRoutes = [

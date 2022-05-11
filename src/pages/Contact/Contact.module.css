@@ -1,12 +1,13 @@
 .contactContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 150px 0;
+    margin: 150px 0;
 }
 
 .contactPhoto {
-    width: 370px;
+    max-width: 370px;
 }
 
 .mail {
@@ -15,4 +16,20 @@
     color: #281a17;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+    .contactContainer {
+        flex-direction: column;
+    }
+
+    .contactPhoto {
+        width: 300px;
+        margin: 0 10px;
+    }
+
+    .mail {
+        margin: 10px 0;
+        font-size: 30px;
+    }
 }

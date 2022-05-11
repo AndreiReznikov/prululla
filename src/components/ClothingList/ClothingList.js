@@ -6,10 +6,12 @@ import styles from "./ClothingList.module.css";
 
 const ClothingList = observer(() => {
     const { clothes } = useContext(Context)
+    const clothingList = clothes.clothingItems.filter(clothingItem => clothingItem.type === clothes.selectedType)
+    const list = clothes.selectedType === 'All' ? clothes.clothingItems : clothingList
     
     return (
          <div className={styles.clothingListContainer}>
-            {clothes.clothingItems.map(clothingItem =>
+            {list.map(clothingItem =>
                 <ClothingItem key={clothingItem.id} clothingItem={clothingItem}/>
             )}
         </div>

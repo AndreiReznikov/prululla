@@ -1,0 +1,73 @@
+.shopContainer {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.typeList {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.typeItem {
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .05em;
+    line-height: 1.4em;
+    color: rgba(34,34,34,.7);
+    transition: opacity .3s ease-in;
+    cursor: pointer;
+}
+
+.typeItem:hover {
+    opacity: 0.5;
+}
+
+.mobileTypeList {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.typeDropdownContainer {
+    display: none;
+    flex-wrap: wrap;
+    width: 100%;
+    cursor: pointer;
+}
+
+.typeDropdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .05em;
+    line-height: 1.4em;
+    color: rgba(34,34,34,.7);
+    transition: opacity .3s ease-in;
+    cursor: pointer;
+}
+
+.typeDropdownArrow::after {
+    content: '\25BE';
+}
+
+@media (max-width: 720px) {
+    .typeList {
+        display: none;
+    }
+
+    .typeDropdownContainer {
+        display: flex;
+    }
+
+    .shopContainer {
+        flex-wrap: wrap;
+    }
+}

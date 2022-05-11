@@ -3,11 +3,21 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    padding: 0 10px;
+}
+
+.homeWrapper {
+    max-width: 1200px;
+}
+
+.topText {
+    text-align: center;
 }
 
 .homePhoto {
-    width: 900px;
-    margin: 20px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
 }
 
 .bottomText {
@@ -16,4 +26,5 @@
     font-weight: bold;
     font-size: 35px;
     text-transform: uppercase;
+    text-align: center;
 }
